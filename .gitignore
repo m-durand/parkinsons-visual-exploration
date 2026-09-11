@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Ignore specified folders
+/extra_files/
+/pkls/
+/plots/
+
+# Ignore macOS system files
+*.DS_Store
+
+
+biblio/
+
+# Manuscript, review correspondence and Overleaf working copies
+*.tex
+/overleaf/
+
+# Exported notebooks: these carry every output, including ones that were
+# stripped from the .ipynb files themselves
+*.html
+*.pdf
+!assets/*
