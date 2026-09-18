@@ -39,7 +39,9 @@ assets/              the small set of images embedded in this README.
 
 ## Data availability
 
-The eye-tracking recordings are not distributed with this repository, and no participant-level data or output appears in it. The study was approved by the Ethics Review Boards of HUF and HGUGM under codes 18/11-ENM1 and 11/2015. Notebook outputs that listed individual participants have been cleared; all cohort-level results and every figure reported in the manuscript remain in the notebooks as executed, and are reproducible by pointing `data_dir` at an equivalent dataset.
+**The eye-tracking recordings are not published and will not be.** They are clinical data from identifiable participants, collected under approvals from the Ethics Review Boards of HUF and HGUGM (codes 18/11-ENM1 and 11/2015). No participant-level data or output appears anywhere in this repository.
+
+Because the data is not available, this is not a reproducibility release and the notebooks cannot be run end to end by anyone outside the study. What is here is the code itself, published so that the methodology can be read and assessed: the feature extraction, the cohort statistics, the model selection and the ensemble fusion, with the cohort-level results and manuscript figures left in place as executed. Anyone wanting to apply the pipeline to their own recordings can point `data_dir` at them, but that is a reuse of the method, not a reproduction of these results.
 
 ## Requirements
 
@@ -50,10 +52,13 @@ Python 3.11, with `pandas`, `numpy`, `scikit-learn`, `scipy`, `statsmodels`, `se
 If you use this code, please cite:
 
 ```bibtex
-@article{alcaladurand_visual_exploration_pd,
-  title   = {Automatic Screening of {P}arkinson's Disease From Visual Explorations},
-  author  = {Alcala-Durand, Maria F. and Puerta-Acevedo, J. Camilo and Arias-Londo{\~n}o, Juli{\'a}n D. and Godino-Llorente, Juan I.},
-  journal = {IEEE Journal of Biomedical and Health Informatics},
-  note    = {In revision},
+@misc{alcaladurand2025visualexploration,
+  title         = {Automatic Screening of {P}arkinson's Disease From Visual Explorations},
+  author        = {Alcala-Durand, Maria F. and Puerta-Acevedo, J. Camilo and Arias-Londo{\~n}o, Juli{\'a}n D. and Godino-Llorente, Juan I.},
+  year          = {2025},
+  eprint        = {2509.01326},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2509.01326},
+  note          = {Preprint, under review}
 }
 ```
